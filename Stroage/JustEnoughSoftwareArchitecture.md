@@ -23,7 +23,7 @@
 
 >32p<br/>
 소프트웨어 복잡성을 성공적으로 해결하려면 개발자에게 개선된 무기가 필요하다.<br/>
->바로 **분할(partition), 분할(knowledge), 추상화(abstraction)** 세 가지 범주이다.
+>바로 **분할(partition), 지식(knowledge), 추상화(abstraction)** 세 가지 범주이다.
 
 <br/>
 
