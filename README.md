@@ -25,7 +25,10 @@
 
 ## 도서목록 
 
-- [적정소프트웨어 아키텍처(리스크 주도 접근법)](https://github.com/iOS-BookClub/.github/blob/suojae/Storage/JustEnoughArchitecture/JustEnoughArchitecture.md) - 전종혁 <br/>
+### 적정소프트웨어 아키텍쳐
+
+- [적정소프트웨어 아키텍처(리스크 주도 접근법)](https://github.com/iOS-BookClub/BookClub/blob/suojae/Storage/JustEnoughArchitecture/JustEnoughArchitecture.md) - 전종혁 <br/>
+
 
 
 <br/>
@@ -33,7 +36,7 @@
 ---
 
 ## 멤버 👨‍💻👩‍💻
-🌿 [전종혁](https://github.com/suojae3) <br>
+🌿 [전종혁(Suojae)](https://github.com/suojae3) <br>
 🐯 [](https://github.com/)  <br>
 ⚽ [](https://github.com/) <br>
 🎧 [박혜정(Effie)](https://github.com/hyeffie) <br>
