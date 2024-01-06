@@ -35,7 +35,7 @@
 
 ## 멤버 👨‍💻👩‍💻
 🌿 [전종혁(Suojae)](https://github.com/suojae3) <br>
-🐯 [](https://github.com/)  <br>
+🐯 [김나영(NERO)](https://github.com/ODDNERO)  <br>
 ⚽ [](https://github.com/) <br>
 🎧 [박혜정(Effie)](https://github.com/hyeffie) <br>
-💪 [](https://github.com/) <br>
+💪 [김병수(Matthew)](https://github.com/kimbs5899) <br>
