@@ -25,7 +25,7 @@
 
 ## 도서목록 
 
-- [적정소프트웨어 아키텍처(리스크 주도 접근법)]() - 전종혁 <br/>
+- [적정소프트웨어 아키텍처(리스크 주도 접근법)](https://github.com/iOS-BookClub/.github/blob/suojae/Storage/JustEnoughArchitecture/JustEnoughArchitecture.md) - 전종혁 <br/>
 
 
 <br/>
