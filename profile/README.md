@@ -1,7 +1,7 @@
 # iOS BookClub
 
 
-<img src="BooksImage.jpeg" width="500" height="auto">
+<img src="Storage/assets/BooksImage.jpeg" width="500" height="auto">
 
 <br/>
 
