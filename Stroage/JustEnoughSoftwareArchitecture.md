@@ -5,6 +5,9 @@
 
 <br/>
 
+<img src="assets/justEnoughArchitectureImage.jpeg">
+
+
 <br/>
 
 
