@@ -1,6 +1,11 @@
 # iOS BookClub
 
 
+<img src="BooksImage.jpeg" width="400" height="200">
+
+<br/>
+
+---
 
 
 ## 목표
