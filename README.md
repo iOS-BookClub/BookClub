@@ -38,5 +38,5 @@
 🌿 [전종혁](https://github.com/suojae3) <br>
 🐯 [](https://github.com/)  <br>
 ⚽ [](https://github.com/) <br>
-🍜 [](https://github.com/) <br>
+🎧 [박혜정(Effie)](https://github.com/hyeffie) <br>
 💪 [](https://github.com/) <br>
