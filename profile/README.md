@@ -37,4 +37,4 @@
 🐯 [](https://github.com/)  <br>
 ⚽ [](https://github.com/) <br>
 🍜 [](https://github.com/) <br>
-💪 [](https://github.com/) <br>
+💪 [김병수](https://github.com/kimbs5899) <br>
