@@ -262,6 +262,16 @@ func performDetachedTaskWithSpecificPriority() {
 
 <br/>
 
-> 
 
+
+>  Also known as an async let binding . Creating your first bits of concurrent with this code is underwhelmingly simple. If you know how to create a constant with let, you can use async let . 
+
+
+<br/>
+
+# 
+
+### Chapter04. Structured Concurrency
+
+> 
 
