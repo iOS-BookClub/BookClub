@@ -193,6 +193,20 @@ Task {
 }
 
 RunLoop.main.run()
+
+/*
+performAsyncTasks 시작
+fetchData3 시작
+fetchData3 완료
+Data from fetchData3
+fetchData1 시작
+fetchData1 완료
+Data from fetchData1
+fetchData2 시작
+fetchData2 완료
+Data from fetchData2
+비동기 작업 완료
+*/
 ```
 
 <br/>
