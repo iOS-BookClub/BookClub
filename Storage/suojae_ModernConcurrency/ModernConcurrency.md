@@ -232,17 +232,35 @@ Data from fetchData2
 <br/> 
 
 ```swift
-Task {
-    // 마법사의 현재 마법 환경을 유지하며 새로운 마법을 부립니다.
-    let result = await castSpell()
-    print(result)
+import Foundation
+
+func printThreadInfo(context: String) {
+    print("\(context): 현재 스레드 - \(Thread.current)")
 }
 
-Task.detached {
-    // 새로운 마법 환경에서 마법을 부립니다.
-    let result = await castSpell()
-    print(result)
+// 현재 스레드 정보를 출력합니다. (메인 스레드)
+printThreadInfo(context: "메인 컨텍스트")
+
+// Task를 사용하여 새로운 작업을 시작합니다.
+Task {
+    printThreadInfo(context: "Task")
+    // 'Task' 안에서는 메인 스레드 또는 메인 스레드와 유사한 환경에서 실행됩니다.
 }
+
+// Task.detached를 사용하여 새로운 작업을 시작합니다.
+Task.detached {
+    printThreadInfo(context: "Task.detached")
+    // 'Task.detached' 안에서는 완전히 새로운 스레드에서 실행됩니다.
+}
+
+// 비동기적으로 실행되기 때문에, 메인 스레드가 마지막에 종료되지 않도록 대기합니다.
+sleep(1)
+
+/*
+메인 컨텍스트: 현재 스레드 - <NSThread: 0x600003b08000>{number = 1, name = main}
+Task: 현재 스레드 - <NSThread: 0x600003b08000>{number = 1, name = main}
+Task.detached: 현재 스레드 - <NSThread: 0x600003b14400>{number = 3, name = (null)}
+*/
 ```
 
 >  The process of storing the images in a local cache can be a detached task, that way if the task is cancelled but the image is downloaded, the cache-saving operation will proceed without an issue.
