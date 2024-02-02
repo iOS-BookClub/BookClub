@@ -16,6 +16,70 @@
 
 ### Chapter01. Introduction
 
+```swift
+// 뮤텍스 사용예시
+class Library {
+    private var lock = NSLock()
+    var book: String = "Swift's Guide to Magic"
+
+    func accessBook() {
+        lock.lock() // 마법사가 책을 사용하기 전에 잠금
+        print("Reading \(book)")
+        // 책을 읽는 코드
+        lock.unlock() // 마법사가 책 사용을 마치고 잠금 해제
+    }
+}
+
+let library = Library()
+DispatchQueue.global().async {
+    library.accessBook()
+}
+DispatchQueue.global().async {
+    library.accessBook()
+}
+```
+
+```swift
+// 세마포어 사용 예시
+class MagicalLibrary {
+    private let semaphore = DispatchSemaphore(value: 2) // 동시에 2명의 마법사가 접근 가능
+    var books = ["Swift Spell Book", "Objective-C Charms"]
+
+    func accessBook(index: Int) {
+        semaphore.wait() // 마법사가 책에 접근하기 전에 대기
+        let book = books[index]
+        print("Reading \(book)")
+        // 책을 읽는 코드
+        semaphore.signal() // 마법사가 책 사용을 마치고, 다음 마법사에게 신호
+    }
+}
+
+let magicalLibrary = MagicalLibrary()
+DispatchQueue.global().async {
+    magicalLibrary.accessBook(index: 0)
+}
+
+DispatchQueue.global().async {
+    magicalLibrary.accessBook(index: 1)
+}
+```
+
+```swift
+// NSOperationQueue를 통해 간단한 멀티스레딩 처리
+let operationQueue = OperationQueue()
+
+let operation1 = BlockOperation {
+    print("Operation 1: Conjuring spells")
+}
+
+let operation2 = BlockOperation {
+    print("Operation 2: Mixing potions")
+}
+
+operationQueue.addOperation(operation1)
+operationQueue.addOperation(operation2)
+```
+
 <br/>
 
 >In the context of multithreading, a deadlock occurs when two different processes are waiting on the other to finish
@@ -149,11 +213,28 @@ RunLoop.main.run()
 
 ### Chapter03. Continuations
 
->In short, a Continuation is whatever happens after an async call is finished. When we are using async/await , a continuation is simply everything below an await call.
-
-> 
+>In short, a Continuation is whatever happens after an async call is finished. When we are using async/await , a continuation is simply everything below an await call. 
 
 <br/> 
+
+```swift
+Task {
+    // 마법사의 현재 마법 환경을 유지하며 새로운 마법을 부립니다.
+    let result = await castSpell()
+    print(result)
+}
+
+Task.detached {
+    // 새로운 마법 환경에서 마법을 부립니다.
+    let result = await castSpell()
+    print(result)
+}
+```
+
+>  The process of storing the images in a local cache can be a detached task, that way if the task is cancelled but the image is downloaded, the cache-saving operation will proceed without an issue.
+
+<br/>
+
 
 
 
